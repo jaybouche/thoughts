@@ -8,8 +8,47 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+    
   <body>
+    <header class="row">
+      <br class="clear" />
+      <div class="col-1">
+       <link href='http://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+        <h1>Thoughts</h1>
+      <br class="clear" />
+      
+       <div id="parrot">
+       <div id="header">
+       <div id="peakt"></div>
+       <div id="face"></div>  
+       <div id="eye"></div>
+       <div id="peakf"></div>
+       </div>
+ 
+       <div id="body">
+       <div id="wing1"></div>
+       <div id="wing2"></div>
+       <div id="wing3"></div>
+       <div id="shadowing"></div>
+       </div>
+ 
+       <div id="foot"></div>
+       <div id="tail"></div>
+       </div>
+      </div>
+  <br class="clear" />    
+      <div class="col-12 links">
+        <%= link_to 'Contribute', '#' %>
+      </div>  
+ 
+    </header>  
+
+<br class="clear" />
+
+
+
     <%= yield %>
+  
+
   </body>
 </html>
